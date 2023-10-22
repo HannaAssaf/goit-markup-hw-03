@@ -58,8 +58,8 @@ margin-bottom: 72px;
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 
 }
 
@@ -117,6 +117,7 @@ margin-bottom: 72px;
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC; 
 }
 
 .page-nav {
@@ -205,13 +206,11 @@ margin-bottom: 72px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* .studio .container {
-    padding-top: 75px;
-    padding-bottom: 60px;
-} */
+
 .studio-list {
     display: flex;
     column-gap: 24px;
+    width: calc((100%-72px)/4);
 }
 
 /* ==============/STUDIO SECTION================= */
@@ -285,6 +284,15 @@ margin-bottom: 72px;
     padding-left: 20px;
 
 }
+.card-content {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch; 
+}
 .portfolio-item {
     font-size: 16px;
     font-weight: 400;
@@ -303,7 +311,7 @@ margin-bottom: 72px;
 .section-footer {
     background: #2E2F42;
     padding-top: 100px;
-    padding-bottom: 77px;
+    padding-bottom: 100px;
 }
 .logotype-footer {
     font-family: Raleway, sans-serif;
@@ -314,18 +322,14 @@ margin-bottom: 72px;
     text-transform: uppercase;
     color: #4D5AE5;
     margin-bottom: 16px;
-}
-.section-footer .container {
-
-    /* margin-left: 0; */
-    width: 100%;
-    max-width: 264px;
-}
+    display: inline-block;
+} 
 .footer-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #F4F4FD;
+    max-width: 264px;
 }
 .accent-color-footer {
     font-family: Raleway, sans-serif;
