@@ -4,6 +4,7 @@ body {
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -11,11 +12,12 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
+  
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+  }
 
 h1,
 h2,
@@ -67,10 +69,8 @@ margin-bottom: 72px;
 
 .container {
     width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -113,7 +113,7 @@ margin-bottom: 72px;
     line-height: 1.5;
     color: #434455;
 }
-.menu-link link {
+.menu-link {
     padding: 24px 0;
 }
 
@@ -184,7 +184,7 @@ margin-bottom: 72px;
     margin-bottom: 94px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     border: none;
@@ -218,10 +218,9 @@ margin-bottom: 72px;
     color: #434455;
     width: calc((100% - 72px) / 4);
 }
-.studio-item .last {
-    margin-right: 0;
+.studio-item:not(:last-child) {
+    gap: 24px;
 }
-
 
 /* ==============/STUDIO SECTION================= */
 
@@ -258,6 +257,8 @@ margin-bottom: 72px;
     color: #434455;
     gap: 24px;
     margin-right: 24px;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 .team-text {
     margin-bottom: 32px;
@@ -265,17 +266,15 @@ margin-bottom: 72px;
     margin-right: auto;
     text-align: center;
 }
-.section-team-img {
-    width: calc((100%-72px) / 4);
-    border-radius: 0px 0px 4px 4px;
 
-}
 .team-card {
     padding: 32px 0;
 }
-.section-team-item .last {
-    margin-right: 0;
+
+.section-team-item:not(:last-child) {
+    gap: 24px;
 }
+
 /* ================ /TEAM SECTION================= */
 
 /* ================= PORTFOLIO ===================== */
@@ -289,7 +288,6 @@ margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    width: calc((100%-48px) / 3);
 }
 
 .portfolio-title {
@@ -299,7 +297,6 @@ margin-bottom: 72px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: left;
-    margin-top: 32px;
     margin-bottom: 8px;
     padding-left: 20px;
 
@@ -312,21 +309,23 @@ margin-bottom: 72px;
     gap: 8px;
     align-self: stretch; 
     padding: 32px 16px;
-    border: 1px solid #e7e9fc; 
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-item {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #434455;
+    width: calc((100% - 48px) / 3);
 }
-.portfolio-item:not(:last-child(-n + 3)) {
-    row-gap: 48px;
+.portfolio-item:not(:last-child) {
+    margin-bottom: 48px;
 }
+
 
 .portfolio-text {
     text-align: left;
-    margin-bottom: 32px;
     padding-left: 20px;
 }
 
