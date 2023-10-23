@@ -46,6 +46,11 @@ button {
 .page-address {
     font-style: normal;
 }
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
  .section-title {
 text-align: center;
@@ -66,12 +71,6 @@ margin-bottom: 72px;
     list-style-type: none;
   }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -86,10 +85,8 @@ margin-bottom: 72px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
-    margin: 0 auto;
-    padding: 0 15px;
     color: #4D5AE5;
+    margin-right: 76px;
 }
 .accent-color {
     font-family: 'Raleway', sans-serif;
@@ -133,8 +130,6 @@ margin-bottom: 72px;
     padding-bottom: 24px;
 }
 .page-header {
-    padding: 0 15px;
-    margin: 0 auto;
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -146,6 +141,8 @@ margin-bottom: 72px;
 .page-address-list {
     display: flex;
     gap: 40px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .menu-list {
