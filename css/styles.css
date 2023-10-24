@@ -52,7 +52,7 @@ button {
     margin: 0 auto;
 }
 
- .section-title {
+.section-title {
 text-align: center;
 font-size: 36px;
 font-weight: 700;
@@ -126,11 +126,11 @@ margin-bottom: 72px;
 .page-header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .page-header {
     border-bottom: 1px solid #E7E9FC;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav {
